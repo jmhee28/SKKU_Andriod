@@ -1,6 +1,17 @@
 # SKKU_Andriod
 
+##IDEA
+Android studio
+
 ## Initial Screen
+If you start the application the login page will show up.
+### Click "로그인" button 
+1. Check whether the ID and it's password in AWS RDS.
+2. If it is not contained in AWS RDS, show Toast message "로그인 실패"
+3. Else if it is contained in AWS RDS, convert the Activity as above image.
+
+### Click "회원가입" button
+Type user's imformations then, the informations will be added into AWS RDS.
 <img src= "https://user-images.githubusercontent.com/92200502/173092669-9f7e601d-ec27-4009-8836-574db8e52f66.jpg" width="200" height="400"/>
 
 ## Current
