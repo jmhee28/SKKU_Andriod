@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/location_display"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Hello World!"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:layout_gravity = "center"
+        app:layout_constraintBottom_toTopOf="@id/current_Temperature"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/current_Temperature"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:text="100C"
+        android:gravity = "center"
+        android:textSize="60sp"
+        android:background="@drawable/edge"
+        app:layout_constraintBottom_toTopOf="@id/feel_Temperature"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_display"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <TextView
+        android:id="@+id/feel_Temperature"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edge"
+        android:gravity="center"
+        android:text="100C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/fashion"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_Temperature"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <TextView
+
+        android:id="@+id/fashion"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:background="@drawable/edge"
+
+        android:text="fashion"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feel_Temperature"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <Button
+        android:id="@+id/week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주간 날씨"
+
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fashion"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="추천의상"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fashion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feel_Temperature"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toStartOf="@id/location_display"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/map_img" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="현재 기온"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/current_Temperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_display" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
