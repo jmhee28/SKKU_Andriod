@@ -12,6 +12,7 @@ If you start the application the login page will show up.
 
 ### Click "회원가입" button
 Type user's imformations then, the informations will be added into AWS RDS.
+
 <img src= "https://user-images.githubusercontent.com/92200502/173092669-9f7e601d-ec27-4009-8836-574db8e52f66.jpg" width="200" height="400"/>
 
 ## Current
